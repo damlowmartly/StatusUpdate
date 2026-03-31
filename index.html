@@ -8,6 +8,12 @@
 </head>
 <body>
 
+  <!-- Fact Ticker -->
+  <div class="fact-bar" id="factBar">
+    <span class="fact-label">BRAIN FACT</span>
+    <span class="fact-text" id="factText">Loading brain fuel...</span>
+  </div>
+
   <!-- Header -->
   <header>
     <div class="header-left">
@@ -15,7 +21,11 @@
       <div class="live-date" id="liveDate">---</div>
     </div>
     <div class="header-right">
-      <span class="header-title">REWIRE & WIN</span>
+      <div class="header-title">REWIRE &amp; WIN</div>
+      <div class="exercise-box" id="exerciseBox">
+        <span class="ex-label">TODAY'S EXERCISE</span>
+        <span class="ex-val" id="exerciseText">30 push-ups · 20 squats · 10 min walk</span>
+      </div>
     </div>
   </header>
 
@@ -61,16 +71,14 @@
         <div class="ear right"></div>
       </div>
       <div class="cat-eyes">
-        <div class="eye left"><div class="pupil"></div></div>
-        <div class="eye right"><div class="pupil"></div></div>
+        <div class="eye left" id="eyeLeft"><div class="pupil" id="pupilLeft"></div></div>
+        <div class="eye right" id="eyeRight"><div class="pupil" id="pupilRight"></div></div>
       </div>
       <div class="cat-nose"></div>
-      <div class="cat-mouth"></div>
+      <div class="cat-mouth" id="catMouth"></div>
       <div class="cat-whiskers">
-        <div class="whisker wl1"></div>
-        <div class="whisker wl2"></div>
-        <div class="whisker wr1"></div>
-        <div class="whisker wr2"></div>
+        <div class="whisker wl1"></div><div class="whisker wl2"></div>
+        <div class="whisker wr1"></div><div class="whisker wr2"></div>
       </div>
       <div class="cat-tail"></div>
     </div>
@@ -78,12 +86,13 @@
   </div>
 
   <!-- Schedule -->
-  <main class="schedule" id="schedule">
-    <!-- Filled by JS -->
-  </main>
+  <main class="schedule" id="schedule"></main>
 
-  <!-- Speech toggle -->
+  <!-- Speech FAB -->
   <button class="speech-fab" id="speechFab" title="Toggle voice">🔊</button>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
 
   <script src="app.js"></script>
 </body>
