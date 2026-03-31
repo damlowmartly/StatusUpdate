@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rewire & Win</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <div class="live-time" id="liveTime">--:--</div>
+      <div class="live-date" id="liveDate">---</div>
+    </div>
+    <div class="header-right">
+      <span class="header-title">REWIRE & WIN</span>
+    </div>
+  </header>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="stat-pill" id="stat-english">
+      <span class="stat-label">ENGLISH</span>
+      <span class="stat-val" id="val-english">0</span>
+    </div>
+    <div class="stat-pill" id="stat-math">
+      <span class="stat-label">MATH</span>
+      <span class="stat-val" id="val-math">0</span>
+    </div>
+    <div class="stat-pill" id="stat-physics">
+      <span class="stat-label">PHYSICS</span>
+      <span class="stat-val" id="val-physics">0</span>
+    </div>
+    <div class="stat-pill" id="stat-auto">
+      <span class="stat-label">AUTO</span>
+      <span class="stat-val" id="val-auto">0</span>
+    </div>
+    <div class="stat-pill" id="stat-tesda">
+      <span class="stat-label">TESDA</span>
+      <span class="stat-val" id="val-tesda">0</span>
+    </div>
+    <div class="stat-pill" id="stat-sales">
+      <span class="stat-label">SALES</span>
+      <span class="stat-val" id="val-sales">0</span>
+    </div>
+    <div class="stat-pill reset-pill" id="resetBtn">
+      <span class="stat-label">RESET</span>
+    </div>
+  </section>
+
+  <!-- Cat Companion -->
+  <div class="cat-zone" id="catZone">
+    <div class="cat-bubble" id="catBubble">
+      <span id="catMsg">Meow! Let's have a great day. 🐾</span>
+    </div>
+    <div class="cat-face" id="catFace" onclick="catSpeak()">
+      <div class="cat-ears">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+      </div>
+      <div class="cat-eyes">
+        <div class="eye left"><div class="pupil"></div></div>
+        <div class="eye right"><div class="pupil"></div></div>
+      </div>
+      <div class="cat-nose"></div>
+      <div class="cat-mouth"></div>
+      <div class="cat-whiskers">
+        <div class="whisker wl1"></div>
+        <div class="whisker wl2"></div>
+        <div class="whisker wr1"></div>
+        <div class="whisker wr2"></div>
+      </div>
+      <div class="cat-tail"></div>
+    </div>
+    <div class="cat-hint">tap me</div>
+  </div>
+
+  <!-- Schedule -->
+  <main class="schedule" id="schedule">
+    <!-- Filled by JS -->
+  </main>
+
+  <!-- Speech toggle -->
+  <button class="speech-fab" id="speechFab" title="Toggle voice">🔊</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
